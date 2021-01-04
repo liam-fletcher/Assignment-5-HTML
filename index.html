@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <script>
+    $(document).ready(function() {
+      //Area
+      $("#area").click(function() {
+        var a = $("#radius").val();
+        $("#result").val((22 / 7) * (+a) * (+a));
+      });
+      //Circumference
+      $("#circumference").click(function() {
+        var a = $("#radius").val();
+        $("#result").val((2) * (22 / 7) * (+a));
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div>
+    Enter radius value:
+    <input type="text" id="radius"> <br><br>
+    <button type="button" id="area"> Area </button>
+    <button type="button" id="circumference"> Circumference </button> <br><br><br> Result:
+    <input type="text" id="result">
+  </div>
+</body>
+</html>
